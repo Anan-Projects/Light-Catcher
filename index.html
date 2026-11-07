@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="lightCatcher.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/gameIcon.png">
+  <link rel="preload" href="image/pixel-background.jpg" as="image">
+  <title>Light Catcher</title>
+</head>
+<body>
+	
+	<main id="mainCont">
+    <div id="finalScoreCont">
+      <h2 id="scoreHeading">Game Over</h2>
+      <p id="scoreTotal"></p>
+      <p id="scoreText"></p>
+      <button id="scoreClose">Close</button>
+    </div>
+    <h1 style="color: white; margin-bottom: 10px; text-align: center; text-shadow: 0 0 10px #ffffff90;">Light Catcher<span id="typing">|</span></h1>
+    <button id="info"><ion-icon name="information-circle"></ion-icon></button> 
+    <div id="infoCont" class="hideInfo">
+      <div class="boxInfos" id="hit">
+        <h1></h1>
+        <h3>Normal Light</h3>
+        <p>Catch this light to score 5 points.</p> 
+      </div>
+      <div class="boxInfos" id="notHit">
+        <h1></h1>
+        <h3>Danger Light</h3>
+        <p>Avoid this light or lose 3 points</p> </div>
+      <div class="boxInfos" id="split">
+        <h1></h1>
+        <h3>Split Light</h3>
+        <p>Catch this light and it will split into 4 different places, each of which is worth 15 points.</p> 
+      </div>
+      <div class="boxInfos" id="double">
+        <h1></h1>
+        <h3>Double Light</h3>
+        <p>Catch this light and normal lights will turn into golden lights for 4 seconds, which are worth 10 points each.</p>
+      </div>
+      <div class="boxInfos" id="freeze">
+        <h1></h1>
+        <h3>Freeze Light</h3>
+        <p>Avoid this light or every box will be frozen for 5 seconds.</p>
+      </div>
+      <div class="boxInfos" id="bomb">
+        <h1></h1>
+        <h3>Bomb Light</h3>
+        <p>Avoid this light or you will lose 25 points along with all buttons disabled for 2 seconds.</p>
+      </div>
+      <div class="boxInfos" id="timeForward">
+        <h1></h1>
+        <h3>Forward Light</h3>
+        <p>Avoid this light or you will lose 5 seconds.</p>
+      </div>
+      <div class="boxInfos" id="timeBackward">
+        <h1></h1>
+        <h3>Rewind Light</h3>
+        <p>Catch this light and you will get extra 5 seconds.</p>
+      </div>
+      
+    </div>
+	  <div id="scoreCngCont">
+	    <p id="scoreCng"></p>
+	  </div>
+    <div id="topCont">
+	  <div id="timeCont">
+      <h4 id="timerHeading">Timer</h4>
+	    <p id="time">30</p>
+	  </div>
+	  <div id="scoreCont">
+      <h4 id="scoreHeading">Score</h4>
+	    <p id="scoreDisplay">0</p>
+	  </div>
+    </div>
+    <div id="boxBackground">
+	  <div id="boxesCont" >
+	    <button  id="box1" class="boxes"></button>
+	    <button id="box2" class="boxes"></button>
+	    <button  id="box3" class="boxes"></button>
+	    <button  id="box4" class="boxes"></button>
+	    <button id="box5" class="boxes"></button>
+	    <button id="box6" class="boxes"></button>
+	    <button id="box7" class="boxes"></button>
+	    <button id="box8" class="boxes"></button>
+	    <button id="box9" class="boxes"></button>
+	    <button id="box10" class="boxes"></button>
+	    <button id="box11" class="boxes"></button>
+	    <button id="box12" class="boxes"></button>
+	    <button id="box13" class="boxes"></button>
+	    <button id="box14" class="boxes"></button>
+	    <button id="box15" class="boxes"></button>
+	    <button id="box16" class="boxes"></button>
+	    <button id="box17" class="boxes"></button>
+	    <button id="box18" class="boxes"></button>
+	    <button id="box19" class="boxes"></button>
+	    <button id="box20" class="boxes"></button>
+	    <button id="box21" class="boxes"></button>
+	    <button id="box22" class="boxes"></button>
+	    <button id="box23" class="boxes"></button>
+	    <button id="box24" class="boxes"></button>
+	    <button id="box25" class="boxes"></button>
+	  </div></div>
+	  <div id="startCont">
+	    <button id="start">Start</button>
+	  </div>
+	</main>
+  <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+	<script src="lightCatcher.js"></script>
+</body>
+</html>
